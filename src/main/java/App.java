@@ -10,14 +10,14 @@ public class App {
         System.out.println(beanHelloWorld.getMessage());
         HelloWorld beanHelloWorld1 =
                 (HelloWorld) applicationContext.getBean("helloworld");
-        boolean compose = beanHelloWorld1==beanHelloWorld;
+        boolean compose = beanHelloWorld1 == beanHelloWorld;
         System.out.println(compose);
         Cat beanCat =
                 (Cat) applicationContext.getBean("cat");
         Cat beanCat1 =
                 (Cat) applicationContext.getBean("cat");
         System.out.println(beanCat.getMessage());
-        boolean compose1 = beanCat1==beanCat;
+        boolean compose1 = beanCat1 == beanCat;
 
         System.out.println(compose1);
     }
